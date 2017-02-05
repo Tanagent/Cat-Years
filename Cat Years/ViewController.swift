@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var catYears: UILabel!
     
     @IBAction func submitBtn(_ sender: Any) {
-        let ageInCatYears = Int(years.text!)! * 7
+        let ageInCatYears: Int = Int(years.text!)! * 7
         catYears.text = String(ageInCatYears)
     }
     
