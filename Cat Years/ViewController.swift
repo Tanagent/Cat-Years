@@ -9,7 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var years: UITextField!
+    @IBOutlet weak var catYears: UILabel!
+    
+    @IBAction func submitBtn(_ sender: Any) {
+        let ageInCatYears = Int(years.text!)! * 7
+        catYears.text = String(ageInCatYears)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
